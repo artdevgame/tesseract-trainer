@@ -1,0 +1,12 @@
+.idea/
+.DS_Store
+*.pyc
+*.pyo
+src/train
+src/tesstrain
+src/langdata_lstm
+src/fonts/*
+src/output/*
+
+# keep these files
+!src/fonts/.gitkeep
