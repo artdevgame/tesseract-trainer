@@ -17,7 +17,8 @@ RUN apt-get install -y --reinstall make && \
 WORKDIR /app
 
 # Copy requirements into the container at /app
-COPY requirements.txt ./
+# Uncomment next line if you have a requirements.txt file in your hierarchy
+# COPY requirements.txt ./      
 
 # Complie Tesseract with training options (also feel free to update Tesseract versions and such!)
 RUN mkdir src && cd /app/src && \
