@@ -16,9 +16,6 @@ RUN apt-get install -y --reinstall make && \
 # Set working directory
 WORKDIR /app
 
-# Copy requirements into the container at /app
-COPY requirements.txt ./
-
 # Complie Tesseract with training options (also feel free to update Tesseract versions and such!)
 RUN mkdir src && cd /app/src && \
   git clone https://github.com/tesseract-ocr/tesseract.git && \
