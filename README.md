@@ -7,7 +7,7 @@ Based on: https://www.youtube.com/watch?v=TpD76k2HYms
 
 ## How to use
 
-1. Clone this repo (`git clone git@github.com:artdevgame/tesseract-trainer.git`)
+1. Clone this repo (`git clone https://github.com/artdevgame/tesseract-trainer.git`)
 2. Copy your selected font into the `src/fonts` directory
 3. Configure [docker-compose.yml](./docker-compose.yml) with your preferences ([see below](#Configuration))
 4. Download and install Docker for your OS (https://www.docker.com/products/docker-desktop)
