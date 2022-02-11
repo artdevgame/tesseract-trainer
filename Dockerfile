@@ -18,7 +18,7 @@ WORKDIR /app
 
 # Complie Tesseract with training options (also feel free to update Tesseract versions and such!)
 RUN mkdir src && cd /app/src && \
-  git clone https://github.com/tesseract-ocr/tesseract.git && \
+  git clone --branch 4.1.3 https://github.com/tesseract-ocr/tesseract.git && \
   cd /app/src/tesseract && ./autogen.sh && ./configure --disable-graphics && make && make install && ldconfig && \
   make training && make training-install && \
   cd /usr/local/share/tessdata && wget https://github.com/tesseract-ocr/tessdata_best/raw/main/eng.traineddata

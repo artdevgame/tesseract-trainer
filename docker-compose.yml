@@ -10,8 +10,8 @@ services:
       - 8000:8000
     volumes:
       - .:/app
-    environment: 
-      - TESSTRAIN_FONT=Agency FB Condensed
+    environment:
+      - TESSTRAIN_FONT=AgencyFB Bold
       - TESSTRAIN_LANG=eng
       - TESSTRAIN_MAX_PAGES=10
       - TESSTRAIN_MAX_ITERATIONS=400
